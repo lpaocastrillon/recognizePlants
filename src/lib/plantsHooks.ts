@@ -13,7 +13,7 @@ const client = await clientPromise;
 
 export function cleanOpenAIResponse(response: string){
     // Elimina bloques de código y espacios
-    let cleaned = response.replace(/```json\n?/g, "").replace(/```/g, "").trim();
+    const cleaned = response.replace(/```json\n?/g, "").replace(/```/g, "").trim();
 
     // Extrae el primer objeto JSON válido del string
     const match = cleaned.match(/{[\s\S]*}/);

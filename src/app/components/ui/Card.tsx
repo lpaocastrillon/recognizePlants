@@ -1,6 +1,5 @@
 'use client';
 
-import { on } from "events";
 import { ReactNode } from "react";
 
 interface CardProps {
